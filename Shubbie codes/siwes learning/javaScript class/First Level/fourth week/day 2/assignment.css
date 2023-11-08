@@ -1,0 +1,108 @@
+
+#container{
+    height: 550px;
+    width: 700px;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px #135e96 solid ;
+    border-top: none;
+}
+h1{
+    padding: 20px 0 5px 0;
+    font-size: 30px;
+}
+input{
+    height: 30px;
+    outline-color: #2271b1;
+    padding-left: 5px;
+}
+#input1{
+    width: 670px;
+}
+#input2{
+    width: 400px;
+    margin-left: 10px;
+}
+#input3{
+    margin-left: 10px;
+  width: 400px;
+}
+#div1{
+    display: flex;
+    margin-left: 250px;
+}
+#amountContainer{
+    padding: 50px;
+}
+#generateBtn{
+    background-color:#006100;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+#generateBtn:hover{
+    background-color: #007200;
+   }
+#amountContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    margin: auto;
+ 
+}
+#amountContainer button {
+    background-color: #135e96;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 80px;
+
+}
+#amountContainer button:hover {
+    background-color: #2271b1;
+}
+button{
+    font-size: 15px;
+}
+#loadBtn{
+    background-color:#006100;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+#loadBtn:hover{
+ background-color: #007200;
+}
+#genContainer{
+    display: flex;
+    padding-bottom: 30px;
+}
+#loadContainer{
+    padding-top: 30px;
+    display: flex;
+}
+.suc{
+ color: green;
+}
+.val{
+    color: red;
+}

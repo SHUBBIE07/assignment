@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div id="container">
+        <h1><marquee behavior="alternate" direction="right">BUY AIRTIME</marquee></h1>
+        <select name="networkOption" id="networkOption">
+            <option value="SelectNetwork">SelectNetwork</option>
+            <option value="GLO">GLO</option>
+            <option value="MTN">MTN</option>
+            <option value="AIRTEL">AIRTEL</option>
+            <option value="ETISALAT">ETISALAT</option>
+        </select>
+
+        <div id="amountContainer">
+            <button onclick="setAmount(100)">100</button>
+            <button onclick="setAmount(200)">200</button> 
+            <button onclick="setAmount(500)">500</button>
+            <button onclick="setAmount(1000)">1000</button>
+            <button onclick="setAmount(2000)">2000</button>
+            <button onclick="setAmount(5000)">5000</button>
+        </div>
+
+        <div id="generateContainer">
+            <input id="generateInput" type="number" placeholder="Enter amount">
+            <button id="generateBtn" onclick="generatePin()">Generate Pin</button>
+        </div>
+
+        <div id="pinDisplay">
+        </div>
+
+        <hr>
+
+        <div id="loadContainer">
+            <input class="loadInput" id="inputGlo" placeholder="load glo pin here...">
+            <button id="loadBtn" onclick="loadGlo()">LOAD GLO</button>
+            <p  id="gloSpan"></p>
+            <hr class="loadHr">
+
+            <input class="loadInput" id="inputMtn" type="text" placeholder="load mtn pin here...">
+            <button id="loadBtn" onclick="loadMtn()" >LOAD MTN</button>
+            <p id="mtnSpan"></p>
+            <hr class="loadHr">
+
+            <input class="loadInput" id="inputAirtel" type="text" placeholder="load airtel pin here...">
+            <button id="loadBtn" onclick="loadAirtel()">LOAD AIRTEL</button>
+            <p  id="airtelSpan"></p>
+            <hr class="loadHr">
+
+            <input class="loadInput" id="inputEtisalat" type="text" placeholder="load etisalat pin here...">
+            <button id="loadBtn" onclick="loadEtisalat()">LOAD ETISALAT</button>
+            <p id="etisalatSpan"></p>
+            <hr class="loadHr">
+        </div>
+
+    </div>
+</body>
+<script src="card.js"></script>
+</html>
+
+
+
+

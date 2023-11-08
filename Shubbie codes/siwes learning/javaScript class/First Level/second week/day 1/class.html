@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+     
+ </body>
+<script>
+
+ function addNum(num1, num2){
+ return num1 + num2
+ }
+ console.log(addNum(7, 11))
+ let test = addNum(8, 16)
+console.log(test)
+
+function operations(a , b){
+    const sum = a + b;
+    const difference = a - b;
+    const quotient = a / b;
+    const product = a * b;
+    const modulo = a % b;
+    const exponent = a ** b;
+   return {add:sum, subtract:difference, divide:quotient, multiply:product, modulo, exponent }
+}
+let arr1 = operations(20, 4)
+console.log(arr1);
+
+let arr2 = [24, 16, 5, 80, 0, 160000];
+let sum = arr2[0];
+let difference = arr2[1];
+
+let obj1 = {name:"test", age:20, color:"grey", club:"chelsea"};
+let age = obj1.age;
+</script>
+</html>

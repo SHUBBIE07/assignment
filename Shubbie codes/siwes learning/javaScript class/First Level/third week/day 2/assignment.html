@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 1) number methods in JS
+// The Number() method converts a value to a number. If the value cannot be converted, NaN is returned.
+
+let x = '10'
+let num = Number(x)
+console.log(num)                 
+console.log(num * 9)      
+
+// Example 2
+let y = true
+let numb = Number(y)
+console.log(numb)                
+console.log(numb + 9)   
+
+//Example 3
+let z = false
+let numbe = Number(z)
+console.log(numbe)                
+console.log(numbe + 9)           
+
+// 2) Array methods
+// i) Array length. The length property returns the length (size) of an array:
+const food = ["Rice", "Amala","Spaghetti", "Yam", "Plaintain",]
+console.log(food.length)
+// ii) Array tostring(). The toString() converts an array to a string of (comma separated) array values.
+const fruits = ["Apple", "Mango","Pineapple", "Orange", "Banana"]
+console.log(fruits.toString())
+// iii) Array pop(). The pop() method removes the last element from an array
+var names = ["Olasubomi", "Aleem","Eniola","Bola","Wonuola"]
+console.log(names.pop())
+console.log(names)
+// iv) Array push(). The push() method adds a new element to an array (at the end)
+let drinks = ["Fanta","Coke","Sprite",'Red Bull']
+console.log(drinks.push("Pepsi"))
+console.log(drinks)
+// v) Array Shift. The shift() method removes the first array element and "shifts" all other elements to a lower index.
+let cars = ["Benz","Range Rover", "Toyota","Tesla","Lexus"]
+console.log(cars.shift())
+console.log(cars)
+// vi) Array unshift(). The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+var phones = ["Iphone","Samsung","Infinix","Techno","Nokia"]
+console.log(phones.unshift("Oppo"))
+console.log(phones)
+
+// 3) What is array iteration in JavaScript?
+// Array iteration means accessing each element of an array. There are some examples of Array iteration methods are given below: 
+// i)  Using Array forEach() Method
+// ii) Using Array some() Method
+// iii) Using Array map() Method
+
+</script>
+</html>

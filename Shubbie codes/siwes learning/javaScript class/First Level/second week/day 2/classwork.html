@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input id="input1" type="text" placeholder="Enter a number..">
+<input id="input2" type="text" placeholder="Enter another number.."> <br><br>
+<button onclick="operate('+')">+</button>
+<button onclick="operate('-')">-</button>
+<button onclick="operate('*')">*</button>
+<button onclick="operate('/')">/</button>
+
+<div id="div1"></div>
+
+</body>
+<script>
+let input1 = document.getElementById("input1")
+let input2 = document.getElementById("input2")
+let div1 = document.getElementById("div1")
+
+ function operate (sign){
+ let num1 = Number(input1.value)
+ let num2 = Number(input2.value)
+ 
+    if (sign === "+"){
+       div1.innerHTML = num1 + num2
+    } else if(sign ==="-"){
+       div1.innerHTML = num1 - num2
+    } else if (sign === "*"){
+       div1.innerHTML = num1 * num2
+    } else if(sign === "/") {
+        div1.innerHTML = num1 / num2
+    }
+}
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input1" type="text"> <br><br>
+    <input id="input2" type="text">
+    <button onclick="display('+')" >+</button>
+    <button onclick="display('-')" >-</button>
+    <button onclick="display('*')" >*</button>
+    <button onclick="display('/')" >/</button>
+    <button onclick="add1()">=</button>
+
+</body>
+<script>
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+function display (a){
+        sign = a
+      input2.value = input1.value
+      input1.value = ""
+}
+
+function add1 (){
+    let input1 = document.getElementById("input1").value;
+    let input2 = document.getElementById("input2").value;
+
+    if(sign === '+'){
+        let result1 = Number(input2) + Number(input1)
+        alert("The addition of the two numbers are " + result1)
+       } else if(sign === '-'){
+        let result2 = Number(input2) - Number(input1)
+        alert("The subtraction of the two numbers are " + result2)
+    }else if(sign === '*'){
+        let result3 = Number(input2) * Number(input1)
+        alert("The multiplication of the two numbers are " + result3)
+    }else if(sign === '/'){
+        let result4 = Number(input2) / Number(input1)
+        alert("The division of the two numbers are " + result4)
+    }
+}
+   </script>
+</html>

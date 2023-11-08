@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding-top: 10%;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to left, blue, red);
+
+    }
+    h1{
+        text-decoration: underline;
+        padding-bottom: 20px;
+    }
+    .second-container{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 70px;
+        height: 200px;
+        width: 500px;
+      box-shadow: 10px  8px  8px -6px rgb(9, 43, 43);
+    }
+    button{
+        background-color: green;
+        height: 40px;
+        border: none;
+        padding: 0 10px;
+    }
+    button:hover{
+      background-color: rgb(88, 139, 88);
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="second-container">
+        <h1>GRADING SYSTEM</h1> 
+        <input id="input1" type="text" placeholder="Enter your score..." >
+        <button onclick="changeResult()">Check</button><br><br><br>
+        <input id="input2" type="text" placeholder="See Result Here 👇" readonly  >
+    </div>
+</div>
+   
+   </div>
+
+</body>
+<script>
+ let input1 = document.getElementById ("input1")
+ input1.style.height = "35px"
+ input1.style.width = "250px"
+ input1.style.paddingLeft = "10px"
+ 
+
+ let input2 = document.getElementById("input2")
+ input2.style.height = "30px"
+ input2.style.width = "150px"
+ input2.style.paddingLeft = "10px"
+ 
+
+ function changeResult(){
+ let result = input1.value 
+   if(result >= 70 && result <=100){
+   input2.value = "A - Excellent!👏";
+   }
+   else if(result >= 60 && result <= 69){
+   input2.value = "B - Good! 👍";
+   }
+   else if(result >= 50 && result <= 59 ){
+   input2.value = "C - Credit 👌 ";
+   }
+   else if(result >= 40 && result <= 49 ){
+   input2.value = "E - Pass 🥴";
+   }
+   else if(result >= 0 && result <= 39 ){
+   input2.value = "F - Fail 😳";
+   }
+   else{
+   input2.value = "Not recognised";
+   }
+ }
+</script>
+ 

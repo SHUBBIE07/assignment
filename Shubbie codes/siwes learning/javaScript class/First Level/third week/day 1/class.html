@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// string mthods and properties in JS
+let club = "I support chelsea football club"
+console.log(club.length);  // returns the length of a string
+
+console.log(club.slice(10, 17));  // returns a sub string from a string. Takes 2 argumnents, first one is the position of the first character of the substring or
+//  word to be extracted and the second one is the position of the last character of the substring or word to be extracted plus one.
+
+console.log(club.slice(-10));  // In this case, our slice starts counting from the end of string. Returns the characters from the end of the string upwards
+console.log(club.slice(10));
+
+console.log(club.substring(-10,17));
+console.log(club.substring(18,27)); 
+// returns a sub string from a string. Takes 2 arguments, first one is the position of the first character of the substring or word to be executed and the second
+//  one is the position of the last character of the sub string or word to be extracted plus one
+
+console.log(club.substr(10, 7));
+console.log(club.substr(18, 8)); 
+// returns a sub string from a string. Takes 2 arguments, first one is the position of the first character of the substring or word to be extracted and the second
+//  one is the number of characters
+
+
+let club2 = club.replace("chelsea", "man utd");
+console.log(club2)
+
+let arr1 = club.split(" ");
+console.log(arr1);
+
+console.log(club.toUpperCase());
+console.log(club.toLowerCase());
+
+console.log(club.indexOf("chelsea"))
+
+
+let str = "I like eating beans. Bread with beans is my fav combo"
+console.log(str.indexOf("beans"));
+console.log(str.lastIndexOf("beans"))
+
+</script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Array Iteration methods in JS
+// 1) For-each()
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+arr1.forEach((item, index)=>{
+ console.log(item * 9)
+})
+
+let arr2 = arr1.map((item, index)=>{
+    return item * 9
+})
+console.log(arr2)
+
+arr3 = ["Chelsea", "Man Utd", "Liverpool", "Barcelona", "Bayern Munich","Real Madrid"]
+let testArr = arr3.map((item, index) => {
+  console.log("I support " + item)
+  return "I support " + item;
+})
+console.log(testArr)
+
+let testArr2 = arr1.filter((item, index) => {
+    return item % 2 === 0
+})
+console.log(testArr2)
+
+let testArr3 = arr3.filter((item, index) => {
+    return item.includes("B")
+})
+console.log(testArr3)
+
+let num1 = arr2.find((item, index) => {
+    return item % 2 === 0
+})
+console.log(num1)
+
+let num2 = arr1.reduce((total, item, index) => {
+  return total + item
+}, 0)
+console.log(num2)
+
+let testArr4 = [
+   { name: "Shubbie", age:26, club: "Chelsea", gender: "Female", isSingle: false },
+   { name: "Afolabi", age:27, club: "Arsenal", gender: "Male", isSingle: true },
+   { name: "Daniel", age:28, club: "Chelsea", gender: "Male", isSingle: false },
+   { name: "Mariam", age:29, club: undefined, gender: "Female", isSingle: true },
+   { name: "Daniel", age:30, club: "Chelsea", gender: "Male", isSingle: false },
+   { name: "Daniel", age:31, club: "Chelsea", gender: "Male", isSingle: false },
+]
+
+let num3 = testArr4.reduce((total, item, index) => {
+    return total + item.age;
+}, 0)
+console.log(num3);
+
+const fruits = ["Apple","Banana","Kiwi","Carrot","Pear","Orange"]
+let [fruit1, fruit2, fruit3, fruit4] = fruits
+
+let obj1 =  { name: "Shubbie", age:26, club: "Chelsea", gender: "Female", isSingle: false }
+let {name, age, club, gender, isSingle} = obj1
+console.log(isSingle)
+
+let arr5 = [1, 2, 3, 4, 5];
+let arr6 = [6, 7, 8, 9, 0];
+
+let arr7 = [...arr5, ...arr6]
+console.log(arr7)
+
+// arr1.forEach(function(){
+ 
+// })
+
+// function multiply(item, index, arr1){
+
+// }
+// arr1.forEach(multiply)
+</script>
+</html>

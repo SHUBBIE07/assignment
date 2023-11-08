@@ -1,0 +1,165 @@
+html,
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+/* Header */
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;  
+}
+#header > ul {
+  padding: 15px;
+  float: right;
+  height: 30px;
+}
+
+.contentBtn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.contentBtn:hover {
+  background-color: #fff;
+}
+
+span {
+  display: block;
+  padding-bottom: 3px;
+  padding-top: 0px;
+}
+
+#header > ul > li {
+  margin: 10px;
+  font-size: 14px;
+}
+
+#apps {
+  background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  width: 30px;
+  height: 30px;
+  background-position: -132px -38px;
+  opacity: 0.55;
+  background-size: auto;
+}
+
+#apps:hover {
+  opacity: 1;
+}
+
+#user-menu {
+  display: flex;
+  align-items: center;
+  background-color: #c2185b;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#user-initial {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: flexbox;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 15px;
+  width: 210px;
+}
+
+.show {
+  display: block;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+#myDropdown {
+  margin-top: 15px;
+  left: -400%;
+}
+
+.body{
+    text-align: center;
+    padding-top: 12%;
+}
+.google-image{
+  height: 20%;
+  width: 30%;
+  padding-bottom: 2%;
+}
+input{
+  height: 45px;
+  width: 600px;
+  font-size: 15px;
+  border: 1px solid #d5d4d4;
+  border-radius: 40px;
+  padding-left: 20px;
+  box-shadow: 0 2px  10px -7px #000;
+ 
+}
+.home-btn{
+  border: none;
+  background-color: #fff;
+  margin: 20px;
+ height: 100px;
+ width: 100px;
+ text-decoration: none;
+}
+.home-btn:hover{
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+@media (min-width: 319px) and (max-width:480px){
+  .google-image{
+    text-align: center;
+  }
+ }
+ @media (min-width: 481px) and (max-width:1200px){
+  .google-image{
+    text-align: center;
+ }
+ }

@@ -1,0 +1,94 @@
+.loadHr{
+    border-style:dotted none none;
+    border-color: #000536;
+    border-width: 6px;
+    width:30%;
+    margin: 20px auto;
+}
+hr{
+    border-color: #000536;
+}
+
+#container{
+    height: 800px;
+    width: 700px;
+    background-color: #24A0ED;
+    margin: auto;
+    padding-top: 10px;
+}
+#networkOption{
+    width: 305px;
+    height: 40px;
+    margin-left: 10px;
+}
+#amountContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    margin:20px auto;
+}
+#amountContainer > button {
+    height: 40px;
+    width: 80px;
+    background-color: #002966;
+    color: white;
+    border: none;
+}
+#amountContainer > button:hover {
+    background-color: #006DB5;
+}
+#generateInput{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+}
+#generateBtn{
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+#generateBtn:hover{
+  background-color: #007200;
+}
+#pinDisplay{
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+.loadInput{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+}
+#loadBtn{
+    height: 40px;
+    width: 150px;
+    background-color: #000536;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+#loadBtn:hover{
+    background-color: #00559A;
+    
+}
+.val{
+    color: red;
+}
+.suc{
+    color: green;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}

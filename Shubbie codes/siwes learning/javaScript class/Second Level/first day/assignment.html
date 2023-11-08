@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <!-- Your HTML code -->
+</body>
+<script>
+let networkOption = document.getElementById("networkOption");
+let generateInput = document.getElementById("generateInput");
+let pinDisplay = document.getElementById("pinDisplay");
+let gloSpan = document.getElementById("gloSpan");
+let mtnSpan = document.getElementById("mtnSpan");
+let airtelSpan = document.getElementById("airtelSpan");
+let etisalatSpan = document.getElementById("etisalatSpan");
+let inputMtn = document.getElementById("inputMtn");
+let inputGlo = document.getElementById("inputGlo");
+let inputAirtel = document.getElementById("inputAirtel");
+let inputEtisalat = document.getElementById("inputEtisalat");
+
+function generatePin(){
+    let pin = Math.floor(Math.random()* 1000000000000000);
+
+    if(generateInput.value === ""){
+        alert("Enter Amount");
+    } else if (networkOption.value == "SelectNetwork") {
+        alert("Select Network");
+    } else {
+        pinDisplay.innerHTML =  pin;
+        alert("You have generated " + generateInput.value + ", " + networkOption.value + " airtime");
+    }
+}
+
+function setAmount(value){
+    generateInput.value = value;
+}
+
+function loadGlo(){
+    let inputGloValue = inputGlo.value;
+
+    if(!inputGloValue.startsWith("*555*") || !inputGloValue.endsWith("#") || inputGlo.value !== pinDisplay.innerHTML){
+        gloSpan.innerHTML= "<p class=val> INVALID PIN</p> ";
+    } else if (networkOption.value !== "GLO"){
+        gloSpan.innerHTML = "<p class=val> INVALID NETWORK PROVIDER</p> ";
+    } else {
+        gloSpan.innerHTML =  "<p class=suc>GLO LOADED SUCCESSFUL</p> ";
+    }
+  
+    mtnSpan.innerHTML ="";
+    inputMtn.value = "";
+    airtelSpan.innerHTML = "";
+    inputAirtel.value = "";
+    etisalatSpan.innerHTML = "";
+    inputEtisalat.value = "";
+}
+
+function loadMtn(){
+    let inputMtnValue = inputMtn.value;
+
+    if(inputMtnValue !== pinDisplay.innerHTML){
+        mtnSpan.innerHTML= "<p class=val> INVALID PIN</p> ";
+    } else if (networkOption.value !== "MTN"){
+        mtnSpan.innerHTML = "<p class=val> INVALID NETWORK PROVIDER</p> ";
+    } else {
+        mtnSpan.innerHTML =  "<p class=suc>MTN LOADED SUCCESSFUL</p> ";
+    }
+    gloSpan.innerHTML ="";
+    inputGlo.value = "";
+    airtelSpan.innerHTML = "";
+    inputAirtel.value = "";
+    etisalatSpan.innerHTML = "";
+    inputEtisalat.value = "";
+}
+
+function loadAirtel(){
+    let inputAirtelValue = inputAirtel.value;
+
+    if(inputAirtelValue !== pinDisplay.innerHTML){
+        airtelSpan.innerHTML= "<p class=val> INVALID PIN</p> ";
+    } else if (networkOption.value !== "AIRTEL"){
+        airtelSpan.innerHTML = "<p class=val> INVALID NETWORK PROVIDER</p> ";
+    } else {
+        airtelSpan.innerHTML = "<p class=suc>AIRTEL LOADED SUCCESSFUL</p> ";
+    }
+    gloSpan.innerHTML ="";
+    inputGlo.value = "";
+    mtnSpan.innerHTML = "";
+    inputMtn.value = "";
+    etisalatSpan.innerHTML = "";
+    inputEtisalat.value = "";
+}
+
+function loadEtisalat(){
+    let inputEtisalatValue = inputEtisalat.value;
+
+    if(inputEtisalatValue !== pinDisplay.innerHTML){
+        etisalatSpan.innerHTML= "<p class=val> INVALID PIN</p> ";
+    } else if (networkOption.value !== "ETISALAT"){
+        etisalatSpan.innerHTML = "<p class=val> INVALID NETWORK PROVIDER</p> ";
+    } else {
+        etisalatSpan.innerHTML = "<p class=suc>ETISALAT LOADED SUCCESSFUL</p> ";
+    }
+    gloSpan.innerHTML ="";
+    inputGlo.value = "";
+    mtnSpan.innerHTML = "";
+    inputMtn.value = "";
+    airtelSpan.innerHTML = "";
+    inputAirtel.value = "";
+}
+</script>
+
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+</body>
+<script>
+    let p1 = document.getElementById("p1");
+
+    setTimeout(() => {
+   alert("Delayed for 5 seconds")
+    }, 5000)
+set 
+    setInterval(() =>{
+        let date = new Date();
+        console.log("Shubbie");
+        console.log("Subomi");
+        console.log(date.getSeconds());
+
+        p1.innerHTML = date.getSeconds()
+
+    },1000 )
+</script>
+</html>

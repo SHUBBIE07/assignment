@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//  write on conditional statement
+// 1) IF Statement -- To specify a block of code to be executed, if a specified condition is true
+var guestList = ["shubbie", "bola", "wonu", "oyin"];
+var  guestName = prompt("What is your name? ");
+if (guestList.includes (guestName)) {
+alert("WELCOME!");
+}
+
+// 2) ELSE statement -- To specify a block of code to be executed, if the same condition is false
+var guestList = ["shubbie", "bola", "wonu", "oyin"];
+var  guestName = prompt("What is your name? ");
+if (guestList.includes (guestName)) {
+alert("WELCOME!");
+} else{
+    alert('Sorry, maybe next time') ;
+}
+
+// 3) ELSE IF Statement -- To specify a new condition to test, if the first condition is false
+let num1 = prompt("Enter first Number");
+let num2 = prompt("Enter second Number");
+if(num1 > num2){
+alert("First number is greater than the second number!");
+} else if(num2 > num1){
+    alert("Second number is greater than the first number!");
+} else {
+    alert("First number is same as second number!");
+}
+
+</script>
+</html>

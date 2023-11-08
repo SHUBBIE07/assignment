@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="container">
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <p>Lorem ipsum, sam vel eaque aliquam deserunt error excepturi vero. Commodi?</p>
+    <button onclick="changeColor()">Light / Dark</button>
+</div>
+</body>
+<script>
+
+function changeColor() {
+    if(document.getElementById("container").style.backgroundColor === "white"){
+        document.getElementById("container").style.backgroundColor = "black" 
+        document.getElementById("container").style.color = "white"
+    } else{
+        document.getElementById("container").style.backgroundColor = "white" 
+        document.getElementById("container").style.color = "black"
+    }
+    
+}
+
+
+</script>
+
+</html>

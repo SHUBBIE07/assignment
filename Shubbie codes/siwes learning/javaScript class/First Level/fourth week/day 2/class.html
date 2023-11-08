@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+
+<body>
+    <div id="container">
+        <h1 id="h1"><marquee behavior="alternate" direction="right"> BUY AIRTIME</marquee></h1>
+        <select name="" id="">
+            <option value="">GLO</option>
+            <option value="">MTN</option>
+            <option value="">AIRTEL</option>
+            <option value="">ETISALAT</option>
+
+        </select>
+        <input id="input1" type="text" placeholder="Enter Network (e.g mtn,glo,airtel,etisalat)"> 
+      
+        <div id="amountContainer">
+            <button onclick="button(50)">50</button>
+            <button onclick="button(100)">100</button>
+            <button onclick="button(200)">200</button> 
+            <button onclick="button(500)">500</button>
+            <button onclick="button(1000)">1000</button>
+            <button onclick="button(2000)">2000</button>
+        </div>
+          
+        <div id="genContainer">
+            <input id="input2" type="number" placeholder="Enter amount">
+            <button id="generateBtn" onclick="display()">Generate</button>
+        </div>
+        
+        <div id="div1"></div>
+        
+        <div id="loadContainer">
+            <input id="input3" type="number" placeholder="load pin here...">
+            <button id="loadBtn" onclick="load()">Load</button>
+        </div>
+
+    
+    </div>
+    
+</body>
+<script src="assignment.js"></script>   
+</html>

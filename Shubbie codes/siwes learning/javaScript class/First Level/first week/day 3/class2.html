@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #div3{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aquamarine;
+   }
+</style>
+<body>
+    <div id="div1"></div>
+    <div class="div2"></div>
+
+    <input type="text" id="input1">
+    <button onclick="changeColor()">Change color</button>
+     <div id="div4"></div>
+</body>
+<script>
+    let div1 = document.querySelector("#div1")
+    div1.style.backgroundColor = "red"
+    div1.style.width = "200px"
+    div1.style.height = "200px"
+    div1.innerText = "Welcome to Javascript class"
+
+    let div2 = document.getElementsByClassName("div2")
+
+    let div3 = document.createElement("div")
+    let parent = document.body;
+    div3.id = "div3"
+    parent.appendChild(div3)
+
+    let input1 = document.getElementById("input1")
+    let div4 = document.getElementById("div4")
+    div4.style.backgroundColor = "blue"
+    div4.style.width = "200px"
+    div4.style.height = "200px"
+
+    function changeColor(){
+        let color = input1.value;
+        div4.style.backgroundColor = color;
+    }
+
+</script>
+</html>

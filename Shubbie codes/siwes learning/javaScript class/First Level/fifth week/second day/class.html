@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // classes in JS
+    class Car {
+        #name;
+        #brand;
+        constructor(name, brand){
+            this.#name = name;
+            this.#brand = brand;
+            console.log( "The name of my car is  " + name + " and the brand is " + brand) ;
+        }
+
+        returnName(){
+            return "Name:" + this.#name + " . " + "Brand:" + this.#brand
+        }
+
+        get name (){
+            return this.#name
+        }
+
+        get brand (){
+            return this.#brand
+        }
+
+        set carName(newName){
+            this.#name = newName
+        }
+
+        test = 'Shubbie'
+    }
+
+    let car = new Car("Camry", "Toyota");
+    console.log(car.name)
+    car.carName = "Supra";
+    console.log(car.name)
+
+
+    let car2 = new Car("4matic", "Mercedes");
+    let test = car2.returnName();
+   console.log(test)
+
+   class ElectricCar extends Car {
+    constructor(name, brand) {
+        super (name, brand)
+    }
+
+    showTest (){
+        return this.test
+    }
+   }
+
+
+
+
+</script>
+</html>

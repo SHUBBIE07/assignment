@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="first-container">
+      <h1><marquee behavior="alternate" direction="right">Shopping List 🛒😇</marquee></h1>
+      <input id="input1" type="text" placeholder="Shopping Item 🛒"><br><br>
+      <input id="input2" type="number" placeholder="Price 💸"><br><br>
+      <input id="input3" type="number" placeholder="Quantity 🤏"><br><br>
+      <p id="ptotal"><b>Total:</b> 0</p>
+      <button onclick="display()" class="submit">Submit</button>
+    </div>
+
+    <div id="shopping-list"></div>
+
+    <script>
+      let subtotals = []; // Array to store subtotals
+
+      function display() {
+        let input1 = document.getElementById("input1").value;
+        let input2 = document.getElementById("input2").value;
+        let input3 = document.getElementById("input3").value;
+        let ptotal = document.getElementById("ptotal");
+        let shoppingList = document.getElementById("shopping-list");
+
+        let price = Number(input2);
+        let quantity = Number(input3);
+
+        let total = price * quantity;
+
+        ptotal.innerHTML = "<b>Total:</b> " + total;
+
+        let newItem = document.createElement("p");
+        newItem.style.textAlign = "center";
+        newItem.style.backgroundColor = "white";
+        newItem.style.width = "1000px";
+        newItem.style.margin = " 5px auto";
+        newItem.style.borderStyle = "solid";
+        newItem.style.borderColor = "#f0f0f1";
+
+        newItem.innerHTML =
+          "<b>Item🛒:</b> " +
+          input1 +
+          "<span></span>" +
+          "<b>Price💸:</b> " +
+          price +
+          "<span></span>" +
+          "<b>Quantity🤏:</b> " +
+          quantity +
+          "<span></span>" +
+          "<b> Sub-total🛒💸:</b> " +
+          total +
+          "<span class='subtotal'></span>" + // Add a class for subtotal
+          "<button onclick='clearItem(this)' class='btn'>Delete</button>" +
+          "<button onclick='editItem(this)' class='btn'>Edit</button>";
+        shoppingList.appendChild(newItem);
+
+        subtotals.push(total); // Add the subtotal to the array
+
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
+      }
+
+      function clearItem(item) {
+        let subtotal = item.parentElement.querySelector('.subtotal').textContent;
+        subtotals = subtotals.filter(val => val !== parseFloat(subtotal));
+        item.parentElement.remove();
+        updateTotal();
+      }
+
+      function editItem(item) {
+        // ... Your existing editItem code
+
+        // After updating the item, update the subtotal and total
+        let subtotalElement = item.parentElement.querySelector('.subtotal');
+        let subtotal = parseFloat(subtotalElement.textContent);
+        let index = subtotals.findIndex(val => val === subtotal);
+
+        if (index !== -1) {
+          subtotals[index] = newTotal;
+          subtotalElement.textContent = newTotal;
+          updateTotal();
+        }
+      }
+
+      function updateTotal() {
+        let total = subtotals.reduce((acc, val) => acc + val, 0);
+        document.getElementById("ptotal").innerHTML = "<b>Total:</b> " + total;
+      }
+    </script>
+  </body>
+</html>

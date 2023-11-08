@@ -1,0 +1,25 @@
+body {background-color: powderblue;
+}
+
+hr { 
+  border-style:dotted none none;
+ border-color: grey;
+ border-width: 5px;
+ width:20%;
+}
+
+h1{
+  color: #66BFBF;
+}
+h2 {
+  color: #66BFBF;
+}
+h3 {
+  color: #66BFBF;
+}
+img{
+  border-radius: 40%;
+}
+.contact{
+  text-align: center;
+}

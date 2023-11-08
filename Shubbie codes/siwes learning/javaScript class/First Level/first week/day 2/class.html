@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // opertors in Javascript
+    // 1) assignment operators
+    let test1 = 23;
+    let test2 = 25;
+
+    test1 += test2 ;
+    console.log(test1);
+
+    let test3 = 45;
+    let test4 = 5;
+    test3 /= test4;
+    console.log(test3);
+
+    test3 *= test4;
+    console.log(test3);
+
+    let test5 = 15;
+    let test6 = 9;
+    test5 %= test6;
+    console.log(test5);
+
+
+
+    //2) logical operators
+    // And operator &&
+    let test7 = 2 + 2 === 4 && 2 + 3 === 4;
+    console.log(test7);
+
+    // OR Operator ||
+    let test8 = 3 + 3 === 6 || 3 + 3 === 9;
+    console.log(test8);
+    
+    // NOT Operator 
+    let test9 = 3 + 3 !== 9;
+    console.log(test9);
+
+    console.log(9 == "9");
+    console.log(9 === "9");
+
+    
+
+    //3) Arithmetic operators\
+    let test10 = 10;
+    test10++;
+    console.log(test10);
+    test10--;
+    console.log(test10);
+
+    // 3)comparison operator
+    console.log(25 <= 15);
+    console.log(25 >= 15);
+
+    // 5 Ternary Operator
+    (5 + 2 ===8) ? alert("This is True") : alert("This is False");
+
+    let num1 = prompt("Enter a number:");
+    let num2 = prompt("Enter another number:");
+    (Number(num1) + Number(num2) === 10) ? alert("The sum of your numbers is equal to 10") : alert("The sum of your numbers is not equal to 10");
+
+</script>
+</html>
